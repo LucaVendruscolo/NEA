@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bg-image" 
+          style="background-image: url('https://wallpaperaccess.com/full/5143161.jpg');
+                 height: 100vh">
+            
+    <style>
+        
+        .range{
+            height: 50px;
+            width: 80%;
+        }
+        .Calculate-Button{
+            height: 40px;
+            width: 30%;
+        }
+        .nav-default {
+        color: #090CDE;
+        }
+        .navigationBackground {
+            background-color: #9728b5;
+        }
+        .textColour {
+            color: #ffffff;
+        }
+
+    </style>
+    
+    <nav class="navbar navbar-expand navigationBackground" >
+
+            <div class="container-fluid">
+              <!-- Links -->
+              <a class="navbar-brand" href="#" >
+                <img src="https://www.topgear.com/sites/default/files/news-listicle/image/2021/08/114608_25_Years_of_Type_R_-_The_1998_Accord_Type_R_CH1.jpg?w=424&h=239" alt="Avatar Logo" style="width:80px;" class="rounded-pill"></a>
+              
+                <div class="collapse navbar-collapse" id="mynavbar" >
+                    <ul class="navbar-nav me-auto text-dark" >
+                      <li class="nav-item" >
+                        <a class="nav-link nav-default" href="javascript:void(0)" >Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link nav-default" href="javascript:void(0)">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link nav-default" href="javascript:void(0)">Link</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          
+          </nav>
+          
+          
+
+
+        <div class="row justify-content-center align-items-center">
+            
+            <label for="Year" class="form-label text-center textColour">Year</label>
+            <input type="range" class="form-range range" min="1900" max="2021" id="customRange2" onchange="updateTextInput(this.valueMPG);">
+            <label for="Milage" class="form-label text-center textColour">Milage</label>
+            <input type="range" class="form-range range" min="0" max="500000" id="customRange2" onchange="updateTextInput(this.valueMPG);">
+            <label for="tax" class="form-label text-center textColour">Tax</label>
+            <input type="range" class="form-range range" min="0" max="300" id="customRange2" onchange="updateTextInput(this.valueMPG);">
+            <label for="MPG" class="form-label text-center textColour">MPG</label>
+            <input type="range" class="form-range range" min="0" max="100" id="customRange2" onchange="updateTextInput(this.valueMPG);">
+            <label for="EngineSize" class="form-label text-center textColour">Engine size</label>
+            <input type="range" class="form-range range" min="0" max="5" id="customRange2" onchange="updateTextInput(this.valueMPG);">
+
+            <button type="button" class="btn btn-primary btn-block Calculate-Button">Calculate</button>
+            
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
